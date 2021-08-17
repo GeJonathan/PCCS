@@ -9,8 +9,6 @@
 }
 
 
-
-
 body {
   background-color: #151d28;
   color: #2ed7bd;
@@ -147,6 +145,7 @@ nav, footer{
 }
 
 .componentes:hover, .armado:hover{
+
   background-color: #84FFFD;
   cursor: pointer;
 }
