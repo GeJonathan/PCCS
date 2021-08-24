@@ -1,17 +1,6 @@
-let btnComponentes = document.getElementById('btnComponentes');
-let btnArmado = document.getElementById('btnArmado');
+btnComponentes = document.getElementById('btnComponentes');
 
+btnComponentes.onclick = function componentes(){
+  window.open("https://www.google.com", "_self");
 
-btnArmado.onClick = function clickArmado(){
-
-  document.btnArmado.style.background = "red";
-
-}
-
-
-function clickArmado(){
-
-  document.btnArmado.style.background = "red";
-
-
-}
+};
