@@ -1,0 +1,20 @@
+#div1, #div2 {
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+  }
+
+  #div3, #div4, #div5{
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+  }
+
+  body{
+    position: relative;
+    background-image: url("../imagenes/descarga.jpg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+  }

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+
+    <title>Orientacion</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+     <div class="container">
+      <header1>
+        <nav class="navOrigen">
+          <img src="img\iso.png" alt="loading" class="iso">
+          <!--<input type="text" name="txtBusqueda" placeholder="BUSCAR" class="txtInput">-->
+
+          <a href="../../proyecto/index.html">INICIO</a>
+          <a href="../Filtrando elemetos/index.html">DISEÑOS</a>
+          <a href="../Menu multinivel/index.html">ARMA TU PC</a>
+          <a href="../Componentes/index.html">COMPONENTES</a>
+        </nav>
+      </header1>
+      <br>
+
+    <h1>CUESTIONARIO DE ORIENTACION</h1>
+
+    <div id="Pregunta1">
+
+        <img src="img/Pensando.png" width="400px" id="imgback">
+        <p>
+            
+           <b> 1. ¿Qué planeas hacer en tu futura pc? </b><br>
+            <br><input type="radio" onclick="mostrarPreg1A();" name="preg1" value="a">a. Estudio <br> <br>
+            <input type="radio" onclick="mostrarPreg1B();" name="preg1" value="b">b. Trabajo <br> <br>
+            <input type="radio" onclick="mostrarPreg1C();" name="preg1" value="c">c. Entretenimiento <br> <br>
+            
+        </p>
+
+    </div>
+
+    <script>
+        function mostrarPreg1A(){
+            document.getElementById('Pregunta1A').style.display = 'block';
+        }
+
+        function ocultarPreg1A(){
+        document.getElementById('Pregunta1A').style.display = 'none';
+    }
+    </script>
+    <style>
+        #Pregunta1A{
+            display: none;
+        }
+    </style>
+    
+    <div id="Pregunta1A">
+        
+        <P>
+         <br> <b> 1. a.  Su estudio es de: </b><br> 
+            <br><input type="radio" onclick="mostrarPresup1A();" name="preg1a" value="a">a. Investigacion ofimatica <br> <br>
+            <input type="radio" onclick="mostrarPresup1B();" name="preg1a" value="b">b. Graficacion 2D / 3D <br> <br>
+            <button id="Atras" onclick="ocultarPreg1A();">Atras</button> <br> <br>
+        </P>
+
+    </div>
+
+    <script>
+       function mostrarPresup1A() {
+            document.getElementById('Presup1A').style.display = 'block';
+        }
+        function ocultarPresup1A() {
+            document.getElementById('Presup1A').style.display = 'none';
+        } 
+
+    </script>
+
+    <style>
+        #Presup1A {
+            display: none;
+        }
+
+    </style>
+
+    <div id="Presup1A">
+        
+        <p>
+             <br><header><b>Procesador Intel Celeron G5920</b> </header>
+
+            <img src="img/Intel Celeron G5920.jpg" style="width: 250px;"> 
+
+             <br><div>
+                Se eligió este procesador porque es económico y cumple con normalidad las tareas <br>
+                 que tenemos como objetivo además de ser de última generación llega a tener una  <br>
+                 arquitectura nueva la cual mejora a sus antecesores modelos, lo cual es suficiente  <br>
+                 para poder realizar investigaciones y trabajos en ofimática. <br>
+            </div>
+        </p>
+        <p>
+             <br><header><b> Memoria RAM 8GB (cualquiera a partir de 2666mhz)</b> </header>
+
+            <img src="img/Memoria ram DDR4 T FORCE.jpg" width="250px">
+
+             <br><div>
+                Actualmente 4GB de RAM se está quedando ‘corto’ en cuanto los programas actuales. <br>
+                 Se eligió 8GB de memoria RAM porque  Windows (sistema operativo comúnmente usado) <br>
+                  se va actualizando con el tiempo a la vez que los programas que vamos a ir utilizando, <br>
+                   esto significa que tenemos que aumentar nuestros recursos, por lo tanto 8GB de memoria <br>
+                    RAM nos abastece muy bien. <br>
+            </div>
+
+        </p>
+
+        <p>
+             <br><header><b> Motherboard Gigabyte H310-MSH</b></header>
+
+            <img src="img/Gigabyte H310-MSH.jpg" width="250px">
+
+             <br><div>
+                Esta placa base es básica del mercado, pero nos sirve porque nos brinda características <br>
+                 que se acoplan a nuestro objetivo, también puede ser mejorable a futuro si nos apuntamos <br>
+                  a otro rubro en cuanto a su uso pero como es básica no podemos mejorar demasiado. <br>
+            </div>
+        </p>
+
+        <p>
+
+             <br><header><b>Fuente de energia Lnz 550w</b> </header>
+
+            <img src="img/lnz 550w.jpg" width="250px">
+
+             <br><div>
+                Esta fuente no nos causará ningún problema en cuanto al uso energético ya que sus watts <br>
+                 son 550 y no necesita ser certificada, suficientes para alimentar a un procesador, <br>
+                  además de que la marca goza de buena reputación. <br>
+
+            </div>
+
+        </p>
+        
+        <p>
+             <br><header><b> Gabinete Sentey G28</b></header>
+
+            <img src="img/Sentey G28.jfif" width="450px">
+
+             <br><div>
+                Este gabinete tiene el suficiente tamaño para que nuestros componentes tengan una buena <br>
+                 circulación de aire, su diseño minimalista lo hace elegante. <br>
+            </div>
+        </p>
+
+        <p>
+            <div>
+                 <br><header id="nd"><b> Recomendaciones (general):</b></header> <br> <br>
+
+                Las computadoras destinadas al estudio tienen la característica de que al no demandar <br>
+                 tanto hardware, eso hace que tengan un precio accesible para la mayoría de la gente. <br> <br>
+
+                
+
+                 <br><header id="nd"><b> Memoria RAM: </b></header> <br> <br>
+
+                Si necesitamos 8GB de memoria RAM se recomienda utilizar el dual channel, esto significa
+                 2 ranuras de RAM del mismo canal (se diferencian los canales por sus colores) en funcionamiento. <br> <br>
+
+                 <br><header id="nd"><b> Procesador: </b></header> <br> <br>
+
+                Generalmente para estudio no se necesita hardware de alta o mediana tecnología,  <br>
+                 esto es una ventaja económica pero también se presenta una desventaja en cuanto a un <br>
+                  futuro ‘upgrade’. <br> <br>
+
+            </div>
+        </p>
+
+        <button id="Atras" onclick="ocultarPresup1A();">Atras</button> <br>
+    </div>
+
+    <script>
+        function mostrarPresup1B() {
+             document.getElementById('Presup1B').style.display = 'block';
+         }
+         function ocultarPresup1B() {
+             document.getElementById('Presup1B').style.display = 'none';
+         } 
+ 
+     </script>
+ 
+     <style>
+         #Presup1B {
+             display: none;
+         }
+ 
+     </style>
+
+    <div id="Presup1B">
+
+        <p>
+             <br><header><b> Procesador Intel Pentium Gold G5620</b></header> <br>
+
+            <img src="img/19-117-875-Z01.jpg" width="250px">
+
+             <br><div>
+                Se eligió este procesador porque es económico y cumple con normalidad las tareas <br>
+                 que tenemos como objetivo además de ser de última generación llega a tener una <br>
+                  arquitectura nueva la cual mejora a sus antecesores modelos, lo cual es suficiente <br>
+                   para poder realizar investigaciones y trabajos en ofimática. <br>
+            </div>
+
+        </p>
+
+        <p>
+             <br><header><b> Memoria RAM 8GB (cualquiera a partir de 2666mhz)</b></header> <br>
+
+            <img src="img/Memoria ram DDR4 T FORCE.jpg" width="250px">
+
+             <br><div>
+                Actualmente 4GB de RAM se está quedando ‘corto’ en cuanto los programas actuales. <br>
+                 Se eligió 8GB de memoria RAM porque  Windows (sistema operativo comúnmente usado) <br>
+                  se va actualizando con el tiempo a la vez que los programas que vamos a ir utilizando, <br>
+                   esto significa que tenemos que aumentar nuestros recursos, por lo tanto 8GB de memoria <br>
+                   RAM nos abastece muy bien. <br>
+            </div>
+
+        </p>
+
+        <p>
+            <br><header><b> Motherboard Gigabyte H310M </b></header> <br>
+
+            <img src="img/Gigabyte H310-MSH.jpg" width="250px">
+
+            <br><div>
+                Esta placa base es básica del mercado, pero nos sirve porque nos brinda características <br>
+                 que se acoplan a nuestro objetivo, también puede ser mejorable a futuro si nos apuntamos <br>
+                  a otro rubro en cuanto a su uso pero como es básica no podemos mejorar demasiado. <br>
+            </div>
+
+        </p>
+
+        <p>
+            <br><header><b> Fuente de energia Lnz 550w </b><br></header>
+
+            <img src="img/lnz 550w.jpg" width="250px">
+
+            <br><div>
+                Esta fuente no nos causará ningún problema en cuanto al uso energético ya que sus watts <br>
+                 son 550 y no necesita ser certificada, suficientes para alimentar a un procesador, además <br>
+                  de que la marca goza de buena reputación. <br>
+
+            </div>
+        </p>
+            <p>
+                <br><header><b> Gabinete Sentey G28 </b><br></header>
+
+            <img src="img/Sentey G28.jfif" width="450px">
+
+            <br><div>
+                Este gabinete tiene el suficiente tamaño para que nuestros componentes tengan una buena <br>
+                 circulación de aire, su diseño minimalista lo hace elegante. <br>
+            </div>
+            </p>
+
+            <p>
+                <br><header><b> Placa de video GT 710 1GB </b></header>
+
+                <img src="img/GT 710.jpg" width="250px">
+
+                <br><div>
+                    Esta placa de video es actualmente de las mas economicas y de facil acceso ya que su <br>
+                     comercializacion no fue afectada con el paso del tiempo. <br>
+                </div>
+            </p>
+        
+            <button id="Atras" onclick="ocultarPresup1B();">Atras</button> <br>
+    </div>
+
+
+
+    <script>
+        function mostrarPreg1B() {
+            document.getElementById('Pregunta1B').style.display = 'block';
+        }
+        function ocultarPreg1B() {
+            document.getElementById('Pregunta1B').style.display = 'none';
+        }
+    </script>
+
+    <style>
+        #Pregunta1B {
+            display: none;
+        }
+    </style>
+
+    <div id="Pregunta1B">
+        <p>
+            <br><b> 1. b. Su trabajo es de: </b><br>
+            <br><input type="radio" onclick="mostrarPreg2A();" name="preg1b" value="a">a. Edicion de multimedia <br> <br>
+            <input type="radio" name="preg1b" value="b">b. Documentación de archivos o documentos <br> <br>
+            <input type="radio" name="preg1b" value="c">c. Realización de planos/gráficos <br> <br>
+            <button id="Atras" onclick="ocultarPreg1B();">Atras</button> <br> <br>
+        </p>
+    </div>
+
+    <script>
+        function mostrarPreg2A() {
+            document.getElementById('Pregunta2A').style.display = 'block';
+        }
+        function ocultarPreg2A() {
+            document.getElementById('Pregunta2A').style.display = 'none';
+        }
+
+    </script>
+
+    <style>
+        #Pregunta2A {
+            display: none;
+        }
+    </style>
+
+    <div id="Pregunta2A">
+        <br><b> 2. a. Usted quiere editar como: </b><br> <br>
+        <br><input type="radio" name="preg2a" value="a">a. Editor con conocimientos básicos (introducción de animaciones, efectos, transiciones, etc) <br> <br>
+        <input type="radio" name="preg2a" value="b">b. Editor con conocimientos avanzados (animación 3D, renderizado en 4K, etc) <br> <br>
+        <button id="Atras" onclick="ocultarPreg2A();">Atras</button> <br>
+
+    </div>
+
+    <script>
+
+
+    </script>
+
+
+    <script>
+        function mostrarPreg1C() {
+            document.getElementById('Pregunta1C').style.display = 'block';
+        }
+        function ocultarPreg1C() {
+            document.getElementById('Pregunta1C').style.display = 'none';
+        }
+
+    </script>
+
+    <style>
+        #Pregunta1C {
+            display: none;
+        }
+    </style>
+
+    <div id="Pregunta1C">
+        <br><b> 1. c.  El entretenimiento que consume es: </b><br> <br>
+        <br><input type="radio" name="preg1c" value="a">a. Redes sociales y cinematografía (películas, series) <br> <br>
+        <input type="radio" onclick="mostrarPreg3B();" name="preg1c" value="b">b. Videojuegos <br> <br>
+        <button id="Atras" onclick="ocultarPreg1C();">Atras</button> <br>
+
+    </div>
+
+    <script>
+        function mostrarPreg3B() {
+            document.getElementById('Pregunta3B').style.display = 'block';
+        }
+        function ocultarPreg3B() {
+            document.getElementById('Pregunta3B').style.display = 'none';
+        }
+
+    </script>
+
+    <style>
+        #Pregunta3B {
+            display: none;
+        }
+
+    </style>
+
+    <div id="Pregunta3B">
+        <br><b> 3. b. La gama en cuanto a videojuegos es de: </b> <br>
+        <br><input type="radio" name="preg3b" value="a">a. Alta <br> <br>
+        <input type="radio" name="preg3b" value="b">b. Media <br> <br>
+        <input type="radio" name="preg3b" value="c">c. Baja <br> <br>
+        <button id="Atras" onclick="ocultarPreg3B();">Atras</button> <br> <br>
+    </div>
+
+</body>
+</html>

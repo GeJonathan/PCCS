@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>PCCS - Armado</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<header>
+		<span id="button-menu" class="fa fa-bars"></span>
+
+		<nav class="navegacion">
+			<ul class="menu">
+				<!-- TITULAR -->
+				<li class="title-menu">Todas las categorias</li>
+				<!-- TITULAR -->
+
+				<li><a href="../../proyecto/index.html"><span class="fa fa-home icon-menu"></span>Inicio</a></li>
+
+
+
+
+				<li class="item-submenu" menu="2">
+					<a href="#"><span class="fa fa-shopping-bag icon-menu"></span>Componentes</a>
+					<ul class="submenu">
+						<li class="title-menu"><span class="fa fa-shopping-bag icon-menu"></span>Componentes</li>
+						<li class="go-back">Atras</li>
+
+						<li><a href="#" ondrop="drop(event)" ondragover="allowDrop(event)">Placa Madre
+								<img src="img/mother.png" draggable="true" ondragstart="drag(event)" id="drag8"
+									width="88" height="31"></a></li>
+
+						<li><a href="#" ondrop="drop(event)" ondragover="allowDrop(event)">Procesador
+								<img src="img/procesador.png" draggable="true" ondragstart="drag(event)" id="drag1"
+									width="88" height="31">
+							</a></li>
+						<li><a href="#" ondrop="drop(event)" ondragover="allowDrop(event)"> SSD
+								<img src="img/ssd.png" draggable="true" ondragstart="drag(event)" id="drag2" width="88"
+									height="31">
+							</a></li>
+						<li><a href="#" ondrop="drop(event)" ondragover="allowDrop(event)"> Disco Rigido
+								<img src="img/disco.png" draggable="true" ondragstart="drag(event)" id="drag3"
+									width="88" height="31">
+							</a></li>
+						<li><a href="#" ondrop="drop(event)" ondragover="allowDrop(event)"> Cable Sata
+								<img src="img/cblst.png" draggable="true" ondragstart="drag(event)" id="drag4"
+									width="88" height="31">
+							</a></li>
+						<li><a href="#" ondrop="drop(event)" ondragover="allowDrop(event)"> Placa de Video
+								<img src="img/pldvd.png" draggable="true" ondragstart="drag(event)" id="drag5"
+									width="88" height="31">
+							</a></li>
+						<li><a href="#" ondrop="drop(event)" ondragover="allowDrop(event)"> Fuente de Alimentacion
+								<img src="img/pcu.png" draggable="true" ondragstart="drag(event)" id="drag6" width="88"
+									height="31">
+							</a></li>
+						<li><a href="#" ondrop="drop(event)" ondragover="allowDrop(event)"> Gabinete
+								<img src="img/gbnt.png" draggable="true" ondragstart="drag(event)" id="drag7" width="88"
+									height="31">
+							</a></li>
+
+						<!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+							<img src="img/ram.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+						  </div>-->
+					</ul>
+
+				</li>
+
+				<li><a href="#"><span class="fa fa-envelope icon-menu"></span>Contacto</a></li>
+			</ul>
+
+		</nav>
+
+	</header>
+
+	<section>
+		<div id="cont">
+			<div id="superiorPadre">
+				<div class="supIzquierda" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<!--insertar imagen-->
+				</div>
+
+				<div class="supMedio" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<!--vacio-->
+				</div>
+
+				<div class="supDerecho">
+					<div class="supDerechoProcesador" ondrop="drop(event)" ondragover="allowDrop(event)">
+						<img src="img/procesadori.png" draggable="true" ondragstart="drag(event)" id="dragcpu" width="137"
+								height="147">
+
+								
+							
+					</div>
+					<a href="#modal" class="btn-open-popup">Procesador</a>
+								<div class="contai-all" id="modal">
+									<div class="popup">
+									  <div class="img1">                
+										</div>
+											<div class="contai-text">
+												<h1> Procesador</h1>
+												<p>Un microprocesador es un componente que realiza las instrucciones y tareas involucradas en el procesamiento informático y es el “motor” que se pone en marcha cuando enciendes el equipo. En un sistema informático, el microprocesador es la unidad central que ejecuta y gestiona las instrucciones lógicas que se le transmiten.</p>
+											</div>
+							
+											<a href="#" class="btn-close-popup">X</a>
+									  
+							
+										
+									</div>
+								</div>
+				</div>
+
+			</div>
+
+			<div id="inferiorPadre">
+				<div class="infIzquierda" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<!--insertar imagen-->
+				</div>
+				<div class="infDerecha">
+					<div class="infDerecha1">
+						<div class="ram1" ondrop="drop(event)" ondragover="allowDrop(event)">
+							<!--insertar imagen-->
+							<img src="img/ramhy.png" draggable="true" ondragstart="drag(event)" id="dragram1" width="408"
+								height="30">
+						</div>
+					</div>
+					<div class="ram2" ondrop="drop(event)" ondragover="allowDrop(event)">
+						<img src="img/ramhy.png" draggable="true" ondragstart="drag(event)" id="dragram2" width="408"
+								height="30">
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+
+
+
+	<script>
+		function allowDrop(ev) {
+			ev.preventDefault();
+		}
+
+		function drag(ev) {
+			ev.dataTransfer.setData("text", ev.target.id);
+		}
+
+		function drop(ev) {
+			ev.preventDefault();
+			var data = ev.dataTransfer.getData("text");
+			ev.target.appendChild(document.getElementById(data));
+		}
+	</script>
+
+</body>
+
+</html>

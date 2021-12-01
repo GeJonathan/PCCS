@@ -1,0 +1,235 @@
+
+body{
+	background-color: #151b28;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+
+h1{
+    color: whitesmoke;
+    padding-left: 600px;
+    padding-top: 100px;
+
+    
+    
+}
+
+#Pregunta1 {
+
+    color: whitesmoke;
+    padding-left: 500px;
+    padding-top: 100px;
+    font-size: 20px;
+
+
+}
+
+#Pregunta1B {
+
+    color: whitesmoke;
+    padding-left: 500px;
+    padding-top: 100px;
+    font-size: 20px;
+
+}
+#Pregunta1C {
+
+    color: whitesmoke;
+    padding-left: 500px;
+    padding-top: 100px;
+    font-size: 20px;
+
+}
+#Pregunta2A {
+
+    color: whitesmoke;
+    padding-left: 500px;
+    padding-top: 100px;
+    font-size: 20px;
+
+}
+#Pregunta3B {
+
+    color: whitesmoke;
+    padding-left: 500px;
+    padding-top: 100px;
+    font-size: 20px;
+
+}
+#Pregunta1A {
+
+    color: whitesmoke;
+    padding-left: 500px;
+    padding-top: 100px;
+    font-size: 20px;
+
+}
+
+#Presup1A {
+
+    color: whitesmoke;
+    padding-left: 500px;
+    padding-top: 100px;
+    font-size: 20px;
+
+}
+
+#Presup1B {
+
+    color: whitesmoke;
+    padding-left: 500px;
+    padding-top: 100px;
+    font-size: 20px;
+
+}
+
+header{
+
+    font-size: 40px;
+
+}
+
+#nd {
+    
+    font-size: 25px;
+
+}
+
+/*Barra superior*/
+
+
+  a{
+    margin-left: 1em;
+    margin-right: 1em;
+    color: white;
+    padding: 1em;
+  }
+  
+  .iso{
+    height: 70px;
+    width: auto;
+  
+    margin-left: 1em;
+  }
+  img{
+    display: inline;
+    width: 25%;
+    height: 25%;
+    margin: auto;
+    padding: 2px;
+  
+  }
+  nav{
+  /*  background-image: url("img/fondo1.jpg");*/
+  background-color: #7e6fe6;
+    background-repeat: no-repeat;
+    background-size: 100%
+  }
+  header, footer{
+  
+  
+    color: black;
+    padding: 1px;
+    margin: 0%;
+  
+    text-align: center;
+  }
+  
+  
+  
+  nav, footer{
+    background-color: #162f4b;
+    padding-bottom: 12px;
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 100%;
+    align-items: center;
+    padding:  1em;
+    width:  100%;
+    text-transform: uppercase;
+    color:  white;
+    text-indent: justify;
+  }
+  
+  .txtInput{
+    height: 2.5em;
+    width: 20em;
+    margin: auto;
+    text-align: center;
+    /*background-color: #2ed7bd;*/
+    background-color: white;
+    color: black;
+    border-color: steelblue;
+    border-radius: 12px;
+    font-family: monospace;
+    border-style: groove;
+    outline: none;
+  
+  
+  }
+  
+  .componentes, .armado{
+    background-color: #5ba0ca;
+    border-radius: 20%;
+    padding: 3%;
+  
+  
+  }
+  .componentes{
+    margin-left: 0%;
+    margin-right: 0%
+  }
+  
+  
+  .btnImagen{
+    margin-top: 8em;
+  
+  }
+  
+  .lblButton{
+    display: inline;
+    padding: 3%;
+  
+  }
+  
+  #btn1{
+    padding: 0.5%;
+    margin-left: 25%;
+    margin-right: 20%;
+  }
+  
+  
+  .lblDiv{
+    margin-top:  1em;
+    margin-bottom: 3em;
+    color: #5ba0ca;
+  
+  }
+  
+  .componentes:hover, .armado:hover{
+  
+    background-color: #84FFFD;
+    cursor: pointer;
+  }
+  
+  /*.componentes:active, .armado:active{
+  
+    border-radius: 15%;
+  
+  }*/
+  
+  a:hover{
+  
+    background-color: #49BAE0;
+  }
+  
+  footer{
+    text-align: center;
+    padding: 2em;
+    position: fixed;
+    bottom: 0;
+    text-transform: none;
+  }

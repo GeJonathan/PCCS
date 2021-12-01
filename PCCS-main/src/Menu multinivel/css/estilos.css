@@ -1,0 +1,357 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open sans';
+	background:#151d28;
+	height: auto;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+
+	padding: 20px;
+	/*background: #34495E;*/
+	background: #162f4b;
+}
+
+header #button-menu{
+	font-size: 30px;
+	/*color 3 lineas del menu*/
+	color: rgb(33, 243, 156);
+	cursor: pointer;
+}
+
+.navegacion{
+/*overflow para que se puedan ver los componentes con una barra de altura*/
+	overflow: auto;
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 0%;
+	height: 100em;
+	background: rgba(0,0,0,.0);
+
+}
+
+.navegacion ul{
+	width: 320px;
+	/*la altura autimatica de la barrita */
+	height: 105%;
+	background: #162f4b;
+	list-style: none;
+
+	position: absolute;
+	top: 0;
+	left: -320px;
+
+	transition: left .3s;
+}
+
+.navegacion .menu li.title-menu{
+	padding: 20px;
+	background: rgb(10, 55, 95);
+	color: #74e9c6;
+	text-align: center;
+	font-size: 22px;
+}
+
+.navegacion .menu a{
+	display: block;
+	padding: 20px;
+	border-bottom: 1px solid #C6D0DA;
+
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 200;
+	color: #5ba0ca;
+	background-color: #151d28;
+	
+}
+
+.navegacion .menu a:hover{
+	background: #798DA3;
+	color: #fff;
+}
+
+.navegacion .menu li span.icon-menu{
+	margin-right: 12px;
+}
+
+.navegacion .menu .item-submenu > a::after{
+	font: normal normal normal 14px/1 FontAwesome;
+  	font-size: inherit;
+  	text-rendering: auto;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+	content: '\f105';
+
+	float: right;
+	color: #C5C5C5;
+}
+
+/* Submenu ============*/
+
+.navegacion .submenu li.title-menu{
+	/*color del fondo submenu componentes y alguno mas que agreguemos*/
+	background: rgb(10, 55, 95);
+	color: #74e9c6;
+}
+
+.navegacion .submenu li.go-back{
+	/*casilla de volver atras*/
+	padding: 10px 20px;
+	background: #264569;
+	
+	color: rgb(255, 255, 255);
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.navegacion .submenu li.go-back::before{
+	font: normal normal normal 14px/1 FontAwesome;
+  	font-size: inherit;
+  	text-rendering: auto;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+	content: '\f0d9';
+	margin-right: 10px;
+}
+
+/*320 es el ancho que tiene nuestra barra del costado*/
+@media screen and (max-width: 320px){
+	.navegacion ul{
+		width: 100%;
+	}
+}
+
+
+
+/*div**/
+
+div{
+	width: 10em;
+	height: 15em;
+	border: 1px solid rgb(255, 255, 255);
+
+	/*background-color: rgba(201, 76, 76, 0.6)*/
+}
+
+#superiorPadre {
+	display: flex;
+	width: 100%;
+	height: 64%;
+	/*background-color: red;*/
+
+
+  }
+#inferiorPadre{
+	display: flex;
+	width: 100%;
+	height: 36%;
+  }
+
+
+#cont{
+	margin-top: 6%;
+	margin-bottom: 5%;
+	margin-left: 25%;
+	width: 700px;
+	height: 588px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+
+	background-image: url("../img/motherv2y650.png");
+}
+
+
+.supIzquierda{
+	flex-direction: row;
+	height: 100%;
+	width: 33%;
+}
+
+.supMedio{
+	width: 32%;
+	height: 100%;
+}
+
+.supDerecho{
+	width: 20%;
+	height: 40%;
+	margin-top: 28%;
+}
+
+.supDerechoProcesador{
+	width: 100%;
+	height: 100%;
+}
+
+	/*pop up*/
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: sans-serif;
+		text-decoration: none;
+	}
+.btn-open-popup{
+    position: absolute;
+    top: 50%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+    color: black;
+	background:lawngreen;
+    display: block;
+    border-radius: 50px;
+    }
+    
+    .contai-all{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+    }
+    
+    .contai-all:target{
+    background: rgb (0, 0, 0);
+    visibility: visible;
+    opacity: 3;
+    
+    }
+    
+    .contai-all:target .popup{
+        top: 50%;
+        left: 50%;
+        transform: rotate(0deg) translate(-50%,-50%);
+        visibility: visible;
+        /*texto de la imagen*/
+        background-color: #151d28;
+        color: blanchedalmond;
+        
+    }
+    
+    
+    .popup{
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    position: center;
+    display: flex;
+    top: -80%;
+    left: -80%;
+    visibility: hidden;
+    transform: rotate(90deg) translate(-75%,170%);
+    transition: all 600ms;
+    }
+    
+    .img1{
+        width: 40%;
+        background-image: url(../img/procesador.jpg);
+        background-size: cover;
+        background-position: center;
+       
+    }
+    
+    .contai-text{
+    width: 60%;
+    padding: 50px;
+    overflow-y: auto;
+    }
+    
+    .contai-text h1{
+        font-size: 30px;
+    }
+    
+    .contai-text p{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    
+    .btn-close-popup{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 20px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    line-height: 10px;
+    }
+    
+    @media screen and (max-width: 900px){
+        .popup{
+            flex-direction: column;
+            height: 100%;
+            max-height: 800px;
+    
+        }
+        .img1{
+            width: 100%;
+            height: 40%;
+        }
+        .contai-text{
+            width: 100%;
+            height: 60%;
+            padding: 80px;
+        }    
+        
+    }
+    
+    
+    @media screen and (max-width: 500px){
+        .contai-text{       
+            padding: 20px;
+        }
+        .contai-text h1{
+            font-size: 20px;    
+        }
+    
+        .contai-text p{
+            font-size: 12px;
+        }
+    
+    
+    }
+
+
+
+.infIzquierda{
+	height: 100%;
+	width: 30%;
+}
+.infDerecha{
+	height: 50%;
+	width: 59%;
+	flex-direction: column;
+}
+
+.infDerecha1{
+	height: 72%;
+	width: 100%;
+}
+
+.ram2{
+	height: 22%;
+	width: 100%;
+}
+
+.ram1{
+	margin-top:9%;
+	height: 35%;
+	width: 100%;
+	
+}
